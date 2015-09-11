@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>To Do Application</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>/*[ng-cloak] { display: none; }/*</style>
+</head>
+<body>
+    <h1>To Do Application</h1>
+
+    <form>
+
+        <!-- Here we can add tasks -->
+        <p><input type="text" placeholder="Add a task..."></p>
+
+        <!-- Here is where we list out our tasks -->
+        <!--<ul ng-cloak>-->
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span>Your task to do</span>
+                </label>
+                <button type="button">&times;</button>
+            </li>
+            <li>
+                <label class="checked">
+                    <input type="checkbox" checked>
+                    <span>Your task to do</span>
+                </label>
+                <button class="btn btn-default" type="button">&times;</button>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <span>Your task to do</span>
+                </label>
+                <button class="btn btn-default" type="button">&times;</button>
+            </li>
+        </ul>
+
+        <div class="footer">
+            <div class="remaining">X items left</div>
+            <div class="filters">
+                <button type="button" class="selected">All</button>
+                <button type="button">Active</button>
+                <button type="button">Completed</button>
+            </div>
+            <div class="clear">
+                <button type="button">Clear Completed</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Load JavaScript files last -->
+    <script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
